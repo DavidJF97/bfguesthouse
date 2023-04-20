@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Cormorant+SC&family=Merriweather:wght@300;400;700&family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    color: black;
+    font-family: Merriweather, Roboto, sans-serif ;
+}
+
+/* headings and logo */
+
+h1{
+    font-family: Roboto, sans-serif;
+}
+
+h2, h3 {
+    font-family: 'Calligraffitti', sans-serif;
+}
+
+
+#logo {
+    float: left;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 30px;
+    color: inherit;
+}
+
+.menu{
+    display: flex;
+    float: right;
+    padding-top: 2%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    margin: 20px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+.active {
+    text-decoration: underline;
+}
+
+/* footer */
+footer {
+    height: 150px;
+    background-color: rgba(229,199,184,0.5);
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 2.5%;
+    color: rgba(192,163,126,1);
+}
