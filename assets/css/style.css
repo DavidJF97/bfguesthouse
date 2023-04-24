@@ -51,6 +51,23 @@ h2, h3 {
     text-decoration: underline;
 }
 
+/* hero image */
+
+#hero-outer {
+    min-height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero-image {
+    min-height: 300px;
+    width: 100%;
+    background: url('../images/droneshot.jpg') no-repeat;
+    background-size: cover;
+    background-position: center right
+}
+
 /* footer */
 footer {
     height: 150px;
