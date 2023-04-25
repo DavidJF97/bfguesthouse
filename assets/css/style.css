@@ -54,18 +54,27 @@ h2, h3 {
 /* hero image */
 
 #hero-outer {
-    min-height: 300px;
+    min-height: 500px;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
 #hero-image {
-    min-height: 300px;
+    min-height: 500px;
     width: 100%;
     background: url('../images/droneshot.jpg') no-repeat;
     background-size: cover;
     background-position: center right
+}
+
+/* rooms */
+
+.rooms {
+    margin: 2%;
+    background-color: blue;
+    height: 300px;
+    width: 95%;
 }
 
 /* footer */
