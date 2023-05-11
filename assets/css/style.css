@@ -72,9 +72,28 @@ h2, h3 {
 
 .rooms {
     margin: 2%;
-    background-color: blue;
+    background-color: rgba(229,199,184,0.5);
     height: 300px;
     width: 95%;
+}
+
+.room-private {
+    float: left;
+    width: 49%;
+    height: 100%;
+    background: url('../images/private1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    
+}
+
+.room-shared {
+    float: right;
+    width: 49%;
+    height: 100%;
+    background: url('../images/shared1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center bottom;
 }
 
 /* footer */
