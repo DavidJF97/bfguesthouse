@@ -19,20 +19,46 @@
         <!-- navigation menu and hero image -->
         <div class="menu">
             <a href="rooms.html">Rooms</a>
-            <a href="contact.html">Contact Us</a>
+            <a class="active" href="contact.html">Contact Us</a>
             <a href="#">To-Do</a>
             <a href="#">Sign up</a>
         </div>
     </header> 
-    <section id="hero-outer">
-        <div id="hero-image"></div>
-    </section>
-    <!--Seperate click through links for rooms-->
-    <section class="rooms">
-        <div class="room-private"></div>
-        <div class="room-shared"></div>
-        <button id="btn-pr" onclick="window.location.href='rooms.html#pics-pr';">Private Rooms</button>
-        <button id="btn-sh" onclick="window.location.href='rooms.html#pics-sh';">Shared Dorms</button>
+    <section id="contact-section">
+        <form action="" method="post" class="contact-form"> 
+            <h2>Contact us</h2>
+            <fieldset>
+                <legend>Fill in your details:</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" class="form-details" required>
+                <br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" class="form-details" required>
+                <br>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email_address" class="form-details" required>
+            </fieldset>
+            <fieldset>
+                <legend>Please selects dates for your stay if required</legend>
+                <label for="date-from">From:</label>
+                <input type="date" id="date-from" name="date_from" class="form-details">
+                <label for="date-to">To:</label>
+                <input type="date" id="date_to" name="date_to" class="form-details">
+            </fieldset>
+            <fieldset>
+                <legend>Select a room and add any further info necessary:</legend>
+                <label for="private1">Private Room 1</label>
+                <input type="radio" id="private1" name="interest" value="private1" class="form-details">
+                <label for="private2">Private Room 2</label>
+                <input type="radio" id="private2" name="interest" value="private2" class="form-details">
+                <label for="shared">Shared Dorm Room</label>
+                <input type="radio" id="shared" name="interest" value="shared" class="form-details">
+                <br>
+                <label for="further-info">Anythin else?</label>
+                <input type="text" id="further-info" name="further_info" class="form-details">
+            </fieldset>
+            <button type="submit" id="submit">Submit</button>
+        </form>
     </section>
     <footer>
         <!-- social media links -->
