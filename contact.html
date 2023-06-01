@@ -21,11 +21,11 @@
             <a href="rooms.html">Rooms</a>
             <a class="active" href="contact.html">Contact Us</a>
             <a href="#">To-Do</a>
-            <a href="#">Sign up</a>
+            <a href="#">Sigroom
         </div>
     </header> 
     <section id="contact-section">
-        <form action="" method="post" class="contact-form"> 
+        <form action="https://script.google.com/macros/s/AKfycbygegf0usOjTbTiH_SisO_lM5QXCKhMvGkNMAgWWequSICVSRTIaQT35ZazxHxxA3Uo/exec" method="POST" class="gform"> 
             <h2>Contact us</h2>
             <fieldset>
                 <legend>Fill in your details:</legend>
@@ -40,22 +40,22 @@
             </fieldset>
             <fieldset>
                 <legend>Please selects dates for your stay if required</legend>
-                <label for="date-from">From:</label>
-                <input type="date" id="date-from" name="date_from" class="form-details">
-                <label for="date-to">To:</label>
-                <input type="date" id="date_to" name="date_to" class="form-details">
+                <label for="date-in">Check-in:</label>
+                <input type="date" id="date-in" name="date_in" class="form-details">
+                <label for="date-out">Check-out:</label>
+                <input type="date" id="date_out" name="date_out" class="form-details">
             </fieldset>
             <fieldset>
                 <legend>Select a room and add any further info necessary:</legend>
                 <label for="private1">Private Room 1</label>
-                <input type="radio" id="private1" name="interest" value="private1" class="form-details">
+                <input type="radio" id="private1" name="room" value="private1" class="form-details">
                 <label for="private2">Private Room 2</label>
-                <input type="radio" id="private2" name="interest" value="private2" class="form-details">
+                <input type="radio" id="private2" name="room" value="private2" class="form-details">
                 <label for="shared">Shared Dorm Room</label>
-                <input type="radio" id="shared" name="interest" value="shared" class="form-details">
+                <input type="radio" id="shared" name="room" value="shared" class="form-details">
                 <br>
-                <label for="further-info">Anythin else?</label>
-                <input type="text" id="further-info" name="further_info" class="form-details">
+                <label for="add-info">Any additional info?</label>
+                <input type="text" id="add-info" name="add_info" class="form-details">
             </fieldset>
             <button type="submit" id="submit">Submit</button>
         </form>
