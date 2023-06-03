@@ -19,9 +19,7 @@
         <!-- navigation menu and hero image -->
         <div class="menu">
             <a href="rooms.html">Rooms</a>
-            <a class="active" href="contact.html">Contact Us</a>
-            <a href="#">To-Do</a>
-            <a href="#">Signup</a>
+            <a class="active" href="contact.html">Contact Us to Book</a>
         </div>
     </header> 
     <section id="contact-section">
@@ -55,6 +53,9 @@
                 <input type="text" id="add-info" name="add_info" class="form-details">
             </fieldset>
             <button type="submit" id="submit">Submit</button>
+            <div style="display:none" class="thankyou_message">
+                <h2>Thanks for contacting us! We will get back to you soon!</h2>
+            </div>
         </form>
     </section>
     <footer>
@@ -68,6 +69,7 @@
     </footer>
         
     <!-- font awesome script-->
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
     <script src="https://kit.fontawesome.com/95778bb5de.js" crossorigin="anonymous"></script>
 </body>
 </html>
