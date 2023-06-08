@@ -1,108 +1,122 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Butterfly Guesthouse (BFGuesthouse)
 
-Welcome David J-F,
+Butterfly Guesthouse is a multi language website, demonstrating uses of HTML, Python and Javascript in a website built for The Butterfly Guesthouse on the island of Langkawi in Malaysia. It is in it's simplest form as a site where prospectice guests can view the property and contact the owners to make a booking.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+View the live website [here](https://davidjf97.github.io/bfguesthouse/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+<img src="assets/readme_images/mockups.PNG" alt="image of multiple devise mock ups of the website">
 
-## Gitpod Reminders
+### Planning Stage
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Experience (UX)
+After discussions with the client, their goals for the website were established and boiled down to the most basic deployable first version to give what they want out of it and the user experience they want to give to potential guests also.
+* User should:
+    * Be able to see images of the property and surrounding area
+    * Be made aware of rooming options available
+    * Be able to contact the hosts through a basic form
+* Client should:
+    * Be able to view guests information put into the form
+    * Be able to recall this information upon guest arrival to confirm bookings
 
-`python3 -m http.server`
+## Features
 
-A blue button should appear to click: _Make Public_,
+### Header and Footer
 
-Another blue button should appear to click: _Open Browser_.
+* Navigation Bar
+    * Located at the top of the page is a navigation bar. Each links to the corresponding section of the site's stand alone page.
+    * This is useful to users as upon landing on the page they can see the content that is available and instantly navigate to their desired section of the site
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+<img src="assets/readme_images/logo_and_menu.PNG" alt="image of the header navigation bar">
 
-A blue button should appear to click: _Make Public_,
+* Social Media Links
+    * Locate at the bottom of the page are the social media links, opening in new tabs.
+    * This feature encourages further interactions as users can follow the site's social media pages and receive updates on their socisal media platform of choice
 
-Another blue button should appear to click: _Open Browser_.
+<img src="assets/readme_images/footer.PNG" alt="image of the footer social media links">
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Landing Page Content
 
-To log into the Heroku toolbelt CLI:
+* Hero Image
+    * The Hero image features a birds-eye view of the guesthouse property.
+    * This serves to greet the user with a calming image of the guesthouse, they get a full view of the surrounding area and the beauty of the property.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<img src="assets/readme_images/header_image.PNG" alt="image of birds-eye view of the guesthouse property">
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* Rooms Section 
+    * Directly below the header is a section featuring the two rooming options on offer.
+    * This serves as a straightforward display to guests. They can click through to view further images and then book the rooms of their choice as is standard on any accomodation booking site.
 
-------
+<img src="assets/readme_images/roomsection.PNG" alt="image of the rooms section of the landing page">
 
-## Release History
+### Rooms/Photo Gallery
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* Room Photos
+    * Users can click through to images of respective room types from the home page or by use of the navigation bar.
+    * This feature allows users to see more images of the rooms available to choose from and even allows them to click through to book the room of their choice diretly from this page.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    <img src="assets/readme_images/bookprivate.PNG" alt="image of the gallery section headers with booking links">
+    <img src="assets/readme_images/bookshared.PNG" alt="image of the gallery section headers with booking links">
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* Property Images
+    * Users can view images of the surrounding property here.
+    * Being able to view images of the surrounding area is a great way to allow users to see further images of the roperty and the surrounding tropical rainforest.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+    <img src="assets/readme_images/property.PNG" alt="image of the gallery section header for the surrounding areas">
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Contact Form Page
+* For client:
+    * The contact form was developed to be as basic as possible as requested by the client. As they live in a very small village and don't currently have a bank account they can only accept in-person cash payments at this time. 
+    * The form input populates an excel spreadsheet the client can access through this [link](https://docs.google.com/spreadsheets/d/1vRUpWBeXpREVRvP30AHdInGvHh24dudsquR4Ll2naTI/edit?usp=sharing)
+    * Upon arrival of guests they can also use a python application I developed to allow them to quickly and easily pull up the respective guest's information 
+    
+        You can view the application [here](https://bfgbooking.herokuapp.com/)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+        You can view my github repository for it  [here](https://github.com/DavidJF97/bfgbooking)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* For User:
+    * The user is greated with a basic form to fill i their details and make a request for a booking the property owners can review.
+    * This is a quite primitive way to make a booking but it is overall very  straightforward and accessible for all.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+    <img src="assets/readme_images/contactform.PNG" alt="image of the contact/booking form">
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Testing
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Responsiveness
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The site was tested to ensure responsiveness on screen sizes from 320px and upwards on Google Chrome, Microsoft Edge and Internet Explorer.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Steps to test:
+1. Open browser and navigate to BFGuesthouse
+2. Open the developer tools (right click and inspect)
+3. Set to responsive
+4. Click and drag the responsive window to test different maximum widths
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Expected:
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Website is responsive on all screen sizes and no images are pixelated or stretched. No elements overlap.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Actual:
 
-------
+Website behaved as expected.
 
-## FAQ about the uptime script
+Website was also opened on the following devices and no responsive issues were seen:
+Iphone SE, Iphone XR, Ipad Air, Ipad Mini
 
-**Why have you added this script?**
+### Validity
+* HTML
+    * No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
+<img src="assets/readme_images/index_htmlvalidation.PNG" alt="image of successful html validation"> 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* CSS    
+    * No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+<img src="assets/readme_images/index_cssvalidation.PNG" alt="image of successful css validation"> 
 
-**How will this affect me?**
+## Deployment
+ The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  1. In the GitHub repository, navigate to the Settings tab 
+  2. Select the Pages section from the left-hand menu
+  3. From the Source drop-down menu, select deploy from Branch
+  4. From the Branch drop-down menu, select Main (or Master)
+  3. Once the branch has been selected, refreshed the page and at the top a detailed ribbon display will indicate the successful deployment. 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+The live link can be found here - https://davidjf97.github.io/bfguesthouse/
